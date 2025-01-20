@@ -1,5 +1,165 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* Основные стили проекта. 
+Это стили для темы, которую вы верстаете
+ первой. 
+ Стили для основной темы и основной ширины 
+ экрана. 
+ Ниже в этом же файле медиавыражения 
+ для адаптива под разные экраны.*/
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0;
+  padding: 10px;
+  color: var(--main-text-color, #F1B2CE);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--background-color, #000028);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+.header {
+  position: relative;
+  height: 100dvb;
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  margin-block-start: 31px;
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  border-left: 1px solid var(--accent-color, #FF0070);
+}
+
+.header__decor-rec {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  block-size: 26px;
+  inline-size: 52px;
+  color: var(--accent-color, #FF0070);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.header__decor-rec::before {
+  content: 'REC';
+}
+
+.header__decor-rec::after {
+  content: '';
+  block-size: 9px;
+  inline-size: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--accent-color, #FF0070);
+  box-shadow: 0px 0px 4px 2px var(--accent-color, #FF0070);
+  
+}
+
+
+
+
+
+
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  font: 400 var(--main-font-size, 18px)/1 var(--main-font, sans-serif);
+  color: var(--button-color, #FF0070);
+  text-transform: lowercase;
+  inline-size: 70px;
+  block-size: 26px;
+  background-color: transparent;
+  border: none;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4)
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color, #FF0070);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: 1px solid transparent;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid transparent;
+  border-bottom: 1px solid var(--button-color, #FF0070);
+}
+
+.decorated-zone__title {
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 0.825;
+  /*font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);*/
+  color: var(--decorated-text-color, #DB00FF);
+  text-shadow: 4px 4px 0px var(--accent-color, #FF0070);
+}
+
+.decorated-zone__paragraph {
+  color: var(--subtitle-text-color, #000028);
+  font-weight: 700;
+}
+
+.title-decor {
+  background-color: var(--accent-color, #FF0070);
+}
+
+
+
+
+
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  }
+
+
+  @media (min-width: нужноеРазрешение) {
+    .header {
+        padding-left: calc(var(--offset) / 2);
+    }
+ 
+ }
