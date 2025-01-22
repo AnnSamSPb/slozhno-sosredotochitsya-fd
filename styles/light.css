@@ -1,24 +1,21 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь описаны стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-light {
-  --background-color: var(--light-pink, #FFC2E6);
+  --blush: #FFF1F7;
+  --light-pink: #FFC2E6;
+  --light-purple: #FF8DCB;
+  --dark-oliv: #353430;
+  --background-color: var(--blush, #FFF1F7);
   --background-image: url(..//images/cover-image-light.png);
-  --main-text-color: var(--dark-oliv, #353430);
   --decorated-text-color: var(--light-pink, #FFC2E6);
-  --subtitle-text-color: var(--dark-oliv, #353430);
+  --main-text-color: var(--dark-oliv, #353430);
+  --accent-text-color: var(--dark-oliv, #353430);
   --accent-color: var(--light-purple, #FF8DCB);
-  --button-color: var(--light-purple, #FF8DCB);
+  --decorated-color: var(--dark-oliv, #353430);
+  --hover-color: rgb(50 49 45 / 0.4);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  color: var(--main-text-color, #353430);
-  background-color: var(--background-color, #FFC2E6);
-  background-image: var(--background-image);
+.theme-light .header__decor-rec {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,7 +26,8 @@
     --decorated-text-color: var(--light-pink, #FFC2E6);
     --subtitle-text-color: var(--dark-oliv, #353430);
     --accent-color: var(--light-purple, #FF8DCB);
-    --button-color: var(--light-purple, #FF8DCB);    
+    --decorated-color: var(--dark-oliv, #353430);
+    --hover-color: rgb(50 49 45 / 0.4);
   }
 
   .header__decor-rec {

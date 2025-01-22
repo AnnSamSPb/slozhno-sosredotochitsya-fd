@@ -1,123 +1,28 @@
+
 :root {
-  /*общие стили для проекта*/
   --dark-pink: #F1B2CE;
   --fuchsia: #DB00FF;
   --purple: #FF0070;
   --dark-blue: #000028;
-  --dark-oliv: #353430;
-  --light-pink: #FFC2E6;
-  --light-purple: #FF8DCB;
 
-  --blush-white: #FFF1F7;
-  --transparent-gray-40: #32312D40;
-  --hot-pink-40: #FF007040;
-  
   --main-font: 'IBM Plex Mono';
   --main-font-size: 18px;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
   --main-line-height: 1.3;
+  
+  --main-margin: 40px;
+  --section-gap: 50px;
+  --internal-padding: 10px;
+
+  --background-color: var(--dark-blue, #000028);
+  --background-image: url(..//images/cover-image-dark.png);
+  --main-text-color: var(--dark-pink, #F1B2CE);
+  --decorated-text-color: var(--fuchsia, #DB00FF);
+  --decorated-color: var(--purple, #FF0070);
+  --accent-text-color: var(--dark-blue, #000028);
+  --accent-color: var(--purple, #FF0070);
+  --hover-color: rgb(255 0 112 / 0.4);
 }
 
-/*:root {
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --dedicated-text-color: #000028;
-  --main-text-color: #f1b2ce;
-  --title-shadow: #ff0070;
-  --background-color: #ff0070;
-  --title-decor: #ff0070;
-  --link-shadow: #ff0070;
-  --hover-color: rgba(255, 0, 112, 0.4);
-  --font-size-rec: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  --font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
-  --font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --background-image-color: #000028;
-  --rec-color: #ff0070;  
-
-
---decor-color: #000028;
-  --title-color: #DB00FF;
-  --href-color: #ff0070;
-  --header-title-color: #ff0070;
-  --border-style: 1px solid #ff0070;
-  --paragraph-color: #F1B2CE;
-  --title-section-color: #ff0070;
-  --button-linear-color: 255, 0, 112;
-  --overlay: block;  
-
-  --accent-color-opacity: #ff007066;
-  --decoration-color: var(--accent-color);
-  --sub-header-color: var(--accent-color);
-  --section-header-color: var(--background-color);
-  --font-family: "IBM Plex mono", monospace;
-  --regular-font-size: 18px;
-  --small-line-height: 83%;
-  --regular-line-height: 100%;
-  --large-line-height: 130%;
-  --bold-font-weight: 700;
-  --regular-font-weight: 400;
-  --font-style: normal;
-  --is-light: visible;
-  --title-shadow-color: #FF0070;
-  --menu-toggle-size: 40px;
-  --section-padding: 20px 10px;
-  --menu-background-color: #80d994;
-  --menu-link-hover-background-color: #fff;
-  --hero-text-color: #fff;
-  --subscribe-form-background-color: #feafe8;
-  --subscribe-form-color: #000;
-  --subscribe-form-button-bg-color: #80d994;
-  --text-container-bg-color: #fff;
-  --text-container-text-color: #000;
-  --icons-list-link-hover-background-color: #80d994;
-  --internal-padding: 0 10px;
-}
-
-@media (width >= 600px) {
-  :root {
-    --section-padding: 40px 20px;
-    --internal-padding: 40px;
-  }
-}
-
-
-Пошли менять цвет и размер под тему (верстаем под тёмную):
-/* Вариант 1 - верстка от тёмной
-:root {
-  --size: 50px;
-  --rect-color: red;
-}
-
-/* Вариант 2 - принудительно меняем на тёмную
-.page.theme_dark {
-  --size: 50px;
-  --rect-color: red;
-}
-
-/* Вариант 3 - принудительно меняем на светлую
-.page.theme_light {
-  --size: 40px;
-  --rect-color: blue;
-}
-
-/* Вариант 4 - светлая, если на устройстве в ОС выбрана светлая
-@media (prefers-color-scheme: light) { // ориентируется на пользовательскую тему ОС
-  :root {
-    --size: 40px;
-    --rect-color: blue;
-  }
-}
-
-все что изначально задано в :root потом переопределяется во всех возможных вариантах
-
-- если по умолчанию на компе светлая, то применится 4ый вариант (в body НЕ добавляется класс через JS)
-синий квадрат 40х40px
-
-- если по умолчанию на компе тёмная, то применится 1ый вариант (в body НЕ добавляется класс через JS)
-красный квадрат 50х50px
-
-- если пользователем принудительно на сайте выбрана светлая, то применится 3ый вариант (в body ДОБАВЛЯЕТСЯ класс через JS)
-синий квадрат 40х40px
-
-- если пользователем принудительно на сайте выбрана тёмная, то применится 2ый вариант (в body ДОБАВЛЯЕТСЯ класс через JS)
-красный квадрат 50х50px
 

@@ -1,22 +1,15 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь описаны стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 :root.theme-dark {
   --background-color: var(--dark-blue, #000028);
   --background-image: url(..//images/cover-image-dark.png);
   --main-text-color: var(--dark-pink, #F1B2CE);
   --decorated-text-color: var(--fuchsia, #DB00FF);
-  --subtitle-text-color: var(--dark-blue, #000028);
+  --decorated-color: var(--purple, #FF0070);
+  --accent-text-color: var(--dark-blue, #000028);
   --accent-color: var(--purple, #FF0070);
-  --button-color: var(--purple, #FF0070);
+  --hover-color: rgba(255, 0, 112, 0.4);
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  color: var(--main-text-color, #F1B2CE);
-  background-color: var(--background-color, #000028);
-  background-image: var(--background-image);
+.theme-dark .header__decor-rec {
+  display: flex;
 }
