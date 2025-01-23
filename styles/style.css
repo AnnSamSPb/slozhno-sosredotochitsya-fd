@@ -114,8 +114,8 @@
 }
 
 .decorated-zone__title {
-  font-size: clamp(7.25rem, 5.7631rem + 6.3272vw, 9.8125rem);
-  line-height: 0.825;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.83;
   color: var(--decorated-text-color, #DB00FF);
   text-shadow: 4px 4px 0px var(--accent-color, #FF0070);
   justify-self: start;
@@ -172,7 +172,7 @@
 .article__link {
   display: inline-block;
   color: currentColor;
-  border: 1px solid transparent;
+  border: none;
   outline: none;
   text-decoration: none;
   text-shadow: 2px 2px 0px var(--accent-color, #FF0070);
@@ -183,12 +183,17 @@
 }
 
 .article__link:focus {
-  outline: 1px solid transparent;
+  outline: none;
 }
 
 .article__link:focus-visible {
-  border: 1px solid transparent;
+  border: none;
   outline: 1px solid currentColor;
+}
+
+.gallery__section {
+  display: grid;
+  gap: 10px;
 }
 
 .gallery {

@@ -20,11 +20,11 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: var(--light-pink, #FFC2E6);
+    --background-color: var(--blush, #FFF1F7);
     --background-image: url(..//images/cover-image-light.png);
-    --main-text-color: var(--dark-oliv, #353430);
     --decorated-text-color: var(--light-pink, #FFC2E6);
-    --subtitle-text-color: var(--dark-oliv, #353430);
+    --main-text-color: var(--dark-oliv, #353430);
+    --accent-text-color: var(--dark-oliv, #353430);
     --accent-color: var(--light-purple, #FF8DCB);
     --decorated-color: var(--dark-oliv, #353430);
     --hover-color: rgb(50 49 45 / 0.4);
