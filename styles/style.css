@@ -193,7 +193,7 @@
 
 .gallery__section {
   display: grid;
-  gap: var(--internal-padding);
+  row-gap: var(--internal-padding);
 }
 
 .gallery {
@@ -242,6 +242,7 @@
     inline-size: 50%;
   }
 
+  .gallery__section,
   .content__section {
     grid-template-columns: 1fr 2fr;
   }
@@ -250,7 +251,8 @@
     grid-column: 2;
   }
 
-  .articles-list {
+  .gallery__section-title,
+  .causes {
     grid-column: span 2;
   }
 
@@ -299,11 +301,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .articles-column {
+  .features,
+  .insights {
     grid-column: span 2;
   }
 
-  .articles-list {
+  .gallery__section-title,
+  .causes {
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
     align-items: start;
