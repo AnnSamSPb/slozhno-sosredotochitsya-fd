@@ -24,3 +24,11 @@
   --accent-color: var(--purple, #FF0070);
   --hover-color: rgb(255 0 112 / 0.4);
 }
+
+@media (width >= 768px) {
+  :root {
+    --main-margin: 60px;
+    --section-gap: 80px;
+    --internal-padding: 20px;
+  }
+}

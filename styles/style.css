@@ -193,7 +193,7 @@
 
 .gallery__section {
   display: grid;
-  gap: 10px;
+  gap: var(--internal-padding);
 }
 
 .gallery {
@@ -224,12 +224,6 @@
 }
 
 @media (width >= 768px) {
-  :root {
-    --main-margin: 60px;
-    --section-gap: 80px;
-    --internal-padding: 20px;
-  }
-
   .header {
     min-block-size: 768px;
   }
