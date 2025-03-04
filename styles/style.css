@@ -199,6 +199,7 @@
 
 .gallery__section {
   display: grid;
+  grid-template-columns: 1fr;
   row-gap: var(--internal-padding);
 }
 
@@ -206,7 +207,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  grid-auto-flow: dense;
 }
 
 .gallery__item {
@@ -273,6 +273,7 @@
     grid-column: span 3;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    grid-auto-flow: dense;
   }
 
   .gallery__item:nth-of-type(1) {
@@ -313,6 +314,10 @@
   .features,
   .insights {
     grid-column: span 2;
+  }
+
+  .gallery {
+    grid-auto-flow: dense;
   }
 
   .gallery__section-title,
